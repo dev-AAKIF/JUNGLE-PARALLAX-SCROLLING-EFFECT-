@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/34132.jpg" type="image/x-icon">
+    <title>Jungle Parallex</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's Time for a new</span><br>Adventure</h2>
+        <img src="./assets/bird1.png" id="bird1">
+        <img src="./assets/bird2.png" id="bird2">
+        <img src="./assets/forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="./assets/rocks.png" id="rocks">
+        <img src="./assets/water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Jungle Parallex Scrolling Effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nesciunt nobis! Numquam, reiciendis tenetur. Voluptate nulla dolorem unde nesciunt repellat commodi dolore assumenda, nisi praesentium iusto veniam obcaecati temporibus minus ad, vitae possimus! Sunt neque aut quasi nostrum eos maxime, totam ex quis, est error adipisci illum repudiandae cumque fuga hic asperiores velit, expedita natus placeat fugit distinctio voluptatibus fugiat aperiam? Facere reiciendis, consequatur in assumenda nobis quos nam odio animi ratione, qui, velit asperiores eum eos ab sapiente mollitia voluptate cumque similique id quisquam alias unde perspiciatis. Eligendi deserunt explicabo facilis fuga dignissimos neque dicta magnam distinctio non aspernatur consectetur, necessitatibus voluptates laudantium eos ullam nisi dolore ratione blanditiis officia porro, quibusdam facere. Totam laboriosam veritatis aspernatur consequatur quo harum debitis eaque reprehenderit aliquid sed beatae corrupti, aperiam quis, ad ut magni et omnis eveniet tenetur voluptatem officiis odio ipsum. Sint in optio nisi, dolore repellendus obcaecati nulla dolorem? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint ipsa, exercitationem incidunt hic autem voluptatem. Deserunt velit sit ea iste expedita facere quas impedit, eveniet quam ex consequatur fuga quis debitis nobis dolores provident cum ab inventore in laudantium id voluptatibus reprehenderit! Fugit, nesciunt? Reiciendis, cupiditate sit atque fugiat similique quibusdam quaerat, quis doloribus ipsam delectus autem rem facere suscipit eius officiis unde dignissimos nam magni! Atque, consequatur. Minima esse nihil quod suscipit voluptates distinctio nesciunt sequi provident. Pariatur consequuntur eius earum ducimus iure, totam, quaerat sint perferendis asperiores nihil exercitationem repudiandae harum, unde ab ratione qui eos architecto? <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, est dolorem ratione nostrum dicta optio mollitia. Atque beatae et quod aut autem ipsa itaque adipisci dicta? Voluptatem, dignissimos eaque magni, architecto similique aut consequuntur porro voluptas tempora rerum dicta beatae laudantium obcaecati quasi temporibus corporis magnam? Dicta, laborum magnam ea numquam quia beatae obcaecati veritatis molestias odit cumque id illo quam velit! Labore sapiente veniam esse, qui quidem beatae, velit aspernatur blanditiis eligendi voluptatibus aut laboriosam odit itaque quis iusto corrupti, tenetur sed. Cupiditate dolor doloribus distinctio alias necessitatibus, enim, aperiam, dignissimos ipsum voluptate atque repudiandae eligendi consequuntur facilis vero.<br><br></p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px'; 
+            bird1.style.left = value * 2 + 'px'; 
+            bird2.style.top = value * -1.5 + 'px'; 
+            bird2.style.left = value * -5 + 'px'; 
+            btn.style.marginTop = value * 1.5 + 'px'; 
+            rocks.style.top = value * -0.12 + 'px'; 
+            forest.style.top = value * 0.25 + 'px'; 
+            header.style.top = value * 0.5 + 'px'; 
+        })
+    </script>
+</body>
+</html>
