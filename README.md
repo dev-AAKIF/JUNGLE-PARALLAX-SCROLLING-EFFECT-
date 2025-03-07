@@ -1,3 +1,3 @@
 # JUNGLE-PARALLAX-SCROLLING-EFFECT-
 
-Link :-  https://dev-aakif.github.io/JUNGLE-PARALLAX-SCROLLING-EFFECT-/
+Link :-  https://dev-akif-jungle-parallax-scrolling-effect.vercel.app/
